@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Automatisk Automatisering" company="" webLink="http://" view-date="2023-02-15" view-index="1" gantt-divider-location="351" resource-divider-location="300" version="3.2.3247" locale="no_NO">
+<?xml version="1.0" encoding="UTF-8"?><project name="Automatisk Automatisering" company="" webLink="http://" view-date="2023-02-09" view-index="0" gantt-divider-location="443" resource-divider-location="300" version="3.2.3247" locale="no_NO">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Navn" width="200" order="0"/>
-        <field id="tpd4" name="Startdato" width="75" order="1"/>
-        <field id="tpd5" name="Sluttdato" width="75" order="2"/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Navn" width="252" order="0"/>
+        <field id="tpd4" name="Startdato" width="95" order="1"/>
+        <field id="tpd5" name="Sluttdato" width="95" order="2"/>
         <option id="filter.completedTasks" value="false"/>
     </view>
     <view id="resource-table">
@@ -34,6 +34,69 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
+        <task id="0" name="Forprosjekt" color="#8cb6ce" meeting="false" start="2023-02-14" duration="12" complete="0" thirdDate="2023-02-15" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[I forprosjektet skal dere gjøre dere kjent med alle spesifikasjonene i prosjektoppgaven, og utstyret som skal benyttes. Beskriv de forskjellige oppgavedelene i prosjektet, og fordel dem mellom gruppens medlemmer.
+
+Planlegg tidsbruken med mål og milepæler. Presenter dette i et Gantt-diagram, og lag arbeidspakkeskjema for hver av de forskjellige arbeidsoppgavene. I arbeidsnotatet skal hver deltager også presentere sitt personlige mål, inklusive karaktermål, og en begrunnelse av dette.
+
+Forståelsen av oppgaven – inklusive denne oppgaveteksten – skal verifiseres gjennom forprosjektnotatet. Relevant informasjon skal være gjengitt med deres egne ord.]]>
+            </notes>
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="PID Funksjonsblokk (Testskjema)" color="#8cb6ce" meeting="false" start="2023-03-02" duration="21" complete="0" thirdDate="2023-03-31" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Testskjemaet skal utformes i samarbeid med kunden, og dere skal i god tid før demonstrasjonen levere inn forslag til dette. Detaljene kan justeres fram til neste prosjektmøte i dialog med veileder.]]>
+            </notes>
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="PID Funksjonsblokk (Arbeidsnotat)" color="#8cb6ce" meeting="false" start="2023-03-31" duration="15" complete="0" thirdDate="2023-03-31" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[PID-blokken skal dokumenteres i et arbeidsnotat. Problemstilling, diskusjon av alternativer og metoder skal komme klart fram. Programdokumentasjon, manualsider og testskjema blir med som vedlegg til notatet.
+
+]]>
+            </notes>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" name="Hovedprosjekt (Testskjema)" color="#8cb6ce" meeting="false" start="2023-04-21" duration="5" complete="0" thirdDate="2023-04-21" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Testskjemaet skal utformes i samarbeid med kunden, og dere skal i god tid før demonstrasjonen levere inn forslag til dette. Detaljene kan justeres fram til demonstrasjonen i dialog med veileder.
+
+]]>
+            </notes>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="Hovedprosjekt (Rapport)" color="#8cb6ce" meeting="false" start="2023-04-28" duration="5" complete="0" thirdDate="2023-03-21" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Dette skal være en ren, teknisk rapport. Den skal brukes av kunden i årene framover som grunnlag for å operere, vedlikeholde og videreutvikle systemet. Kunden skal samtidig kunne forstå bakgrunnen for at spesifikke tekniske løsninger ble valgt. Implementeringsdetaljer fra tidligere innleveringer skal derfor dokumenteres også i hovedrapporten. Dette kan for eksempel organiseres slik at tidligere innleveringer blir egne kapitler i hovedrapporten (kommunikasjonsoppsett, implementering av PID-regulator, osv.). Disse trenger ikke å være like detaljert som i arbeidsnotatene, men grundig nok til at en leser skal kunne forstå arbeidet som er gjort uten å ha lest de tidligere notatene. Implementasjonen kan ha endret seg noe fra arbeidsnotatene ble skrevet, og det er viktig at hovedrapporten inneholder presis dokumentasjon av implementeringen slik den fremstår på hovedprosjektet. Det er anledning til å klippe-og-lime inn tidligere utarbeidet tekst, men det skal da gjøres klart at dette er gjort og hvor det er hentet fra i teksten ved å referere. Det er derimot anbefalt å heller bearbeide og skrive om tidligere tekst før det benyttes i hovedrapporten, da dette er slik det i utgangspunktet må gjøres i andre akademiske arbeider.
+
+Kodefiler fra hovedprosjektet (PLS, iX Developer og InTouch) kan legges i en Zip-fil og leveres sammen med hovedprosjektrapporten. Selve rapporten skal i utgangspunktet ikke ha kodebasen som vedlegg bakerst. Hvis det benyttes kodesnutter i rapporten for å diskutere f.eks. implementeringen av regulatoren, kan det hende det er nyttig å ha med resten av den aktuelle kodefilen som et vedlegg bakerst slik at leseren enkelt kan finne hele konteksten kodesnutten er hentet fra.]]>
+            </notes>
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="Refleksjonsnotat" color="#8cb6ce" meeting="false" start="2023-05-05" duration="5" complete="0" thirdDate="2023-05-05" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Her kommer alt det ikke-tekniske.
+
+Første del av dette dokumentet skal ta utgangspunkt i forprosjektnotatet. I den grad det er praktisk, skal dere sammenligne rapporten punkt for punkt med hva som virkelig skjedde, og hvordan samarbeidet dere imellom har fungert. 
+
+I andre del skal hver enkelt ta utgangspunkt i sin egen beskrivelse av personlige mål, og reflektere over hva som er utført og oppnådd, dessuten refleksjoner rundt egen læring og arbeidsinnsats. Den enkelte skal til slutt angi hvilken karakter han eller hun bør få på prosjektet.
+
+Notatet blir best hvis dere starter med å formulere litt hver for dere, for til slutt å sammenligne notater før dere blir enige om et felles dokument. ]]>
+            </notes>
+        </task>
+        <task id="7" name="Medstudentvurdering" color="#8cb6ce" meeting="false" start="2023-05-05" duration="5" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Hvis det underveis i prosjektet har oppstått situasjoner som gjør at man som gruppemedlem ikke kan stille seg bak andre gruppemedlemmers vurdering av egen innsats i refleksjonsnotatet (eventuelt hvis man ønsker å fremheve et eller flere gruppemedlemmer sin innsats spesielt), kan det enkelte gruppemedlem også utforme en medstudentvurdering som sendes til veileder på e-post separat samme dag som levering av refleksjonsnotatet.
+
+Dette kan virke litt skummelt, men er viktig for å skape balanse i egenvurderingene i refleksjonsnotatet. 
+
+Medstudentvurderingen er konfidensiell, og vil bli slettet så snart karakteren på prosjektet er bestemt. Disse vurderingene vil ikke bli oppgitt i forbindelse med evt. begrunnelser, annet enn i generelle ordelag.
+
+Hvis et gruppemedlem ikke leverer en medstudentvurdering vil veileder tolke det som at denne støtter det de andre gruppemedlemmene har skrevet om seg selv i refleksjonsnotatet angående arbeidsinnsats og karakter.]]>
+            </notes>
+        </task>
     </tasks>
     <resources>
         <resource id="0" name="Daniel" function="Default:0" contacts="danira@stud.ntnu.no" phone="95120084"/>
